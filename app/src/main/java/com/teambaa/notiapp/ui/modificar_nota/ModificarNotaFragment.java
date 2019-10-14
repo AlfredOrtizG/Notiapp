@@ -1,4 +1,4 @@
-package com.teambaa.notiapp.ui.slideshow;
+package com.teambaa.notiapp.ui.modificar_nota;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,19 +14,19 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.teambaa.notiapp.R;
 
-public class SlideshowFragment extends Fragment
+public class ModificarNotaFragment extends Fragment
 {
 
-    private SlideshowViewModel slideshowViewModel;
+    private ModificarNotaViewModel modificarNotaViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState)
     {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        modificarNotaViewModel =
+                ViewModelProviders.of(this).get(ModificarNotaViewModel.class);
+        View root = inflater.inflate(R.layout.modificar_nota, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<String>()
+        modificarNotaViewModel.getText().observe(this, new Observer<String>()
         {
             @Override
             public void onChanged(@Nullable String s)

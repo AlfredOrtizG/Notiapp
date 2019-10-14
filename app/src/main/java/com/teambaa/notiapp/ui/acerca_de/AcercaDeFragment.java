@@ -1,4 +1,4 @@
-package com.teambaa.notiapp.ui.send;
+package com.teambaa.notiapp.ui.acerca_de;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,19 +14,19 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.teambaa.notiapp.R;
 
-public class SendFragment extends Fragment
+public class AcercaDeFragment extends Fragment
 {
 
-    private SendViewModel sendViewModel;
+    private AcercaDeViewModel acercaDeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState)
     {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>()
+        acercaDeViewModel =
+                ViewModelProviders.of(this).get(AcercaDeViewModel.class);
+        View root = inflater.inflate(R.layout.acerca_de, container, false);
+        final TextView textView = root.findViewById(R.id.text_tools);
+        acercaDeViewModel.getText().observe(this, new Observer<String>()
         {
             @Override
             public void onChanged(@Nullable String s)

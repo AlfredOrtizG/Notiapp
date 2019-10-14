@@ -1,18 +1,18 @@
-package com.teambaa.notiapp.ui.share;
+package com.teambaa.notiapp.ui.mis_notas;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel
+public class MisNotasViewModel extends ViewModel
 {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel()
+    public MisNotasViewModel()
     {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is mis_notas fragment");
     }
 
     public LiveData<String> getText()

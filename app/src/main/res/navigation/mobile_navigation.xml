@@ -7,37 +7,27 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.teambaa.notiapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.teambaa.notiapp.ui.mis_notas.MisNotasFragment"
+        android:label="@string/menu_mis_notas"
+        tools:layout="@layout/mis_notas" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.teambaa.notiapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.teambaa.notiapp.ui.crear_nota.CrearNotaFragment"
+        android:label="@string/menu_crear_nota"
+        tools:layout="@layout/crear_nota" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.teambaa.notiapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.teambaa.notiapp.ui.modificar_nota.ModificarNotaFragment"
+        android:label="@string/menu_editar_nota"
+        tools:layout="@layout/modificar_nota" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.teambaa.notiapp.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:name="com.teambaa.notiapp.ui.acerca_de.AcercaDeFragment"
+        android:label="@string/menu_acerca_de"
+        tools:layout="@layout/acerca_de" />
 
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.teambaa.notiapp.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.teambaa.notiapp.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>

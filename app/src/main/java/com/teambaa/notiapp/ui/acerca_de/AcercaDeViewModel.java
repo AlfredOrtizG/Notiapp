@@ -1,18 +1,18 @@
-package com.teambaa.notiapp.ui.tools;
+package com.teambaa.notiapp.ui.acerca_de;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ToolsViewModel extends ViewModel
+public class AcercaDeViewModel extends ViewModel
 {
 
     private MutableLiveData<String> mText;
 
-    public ToolsViewModel()
+    public AcercaDeViewModel()
     {
         mText = new MutableLiveData<>();
-        mText.setValue("This is tools fragment");
+        mText.setValue("This is acerca_de fragment");
     }
 
     public LiveData<String> getText()
