@@ -12,7 +12,7 @@ public class MisNotasViewModel extends ViewModel
     public MisNotasViewModel()
     {
         mText = new MutableLiveData<>();
-        mText.setValue("This is mis_notas fragment");
+        mText.setValue("MIS NOTAS");
     }
 
     public LiveData<String> getText()

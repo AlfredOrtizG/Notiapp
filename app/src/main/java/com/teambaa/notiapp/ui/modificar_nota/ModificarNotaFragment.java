@@ -34,6 +34,12 @@ public class ModificarNotaFragment extends Fragment
                 textView.setText(s);
             }
         });
+//        Bundle bundle = this.getArguments();
+//        if (bundle != null)
+//        {
+//            int id = Integer.parseInt(bundle.get("id").toString());
+//            System.out.println(id);
+//        }
         return root;
     }
 }
