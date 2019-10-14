@@ -1,10 +1,14 @@
 Notiapp
 
-Abi - Listar notas utilizando cards y material design
+Alfredo - Crear y configurar base de datos, listar notas
 
-Brisa - Crear nota utilizando elementos de material design
+Abi - Crear notas utilizando cards y material design
 
-Alfredo - Crear y configurar base de datos
+Brisa - Modificar nota utilizando elementos de material design y acerca de
+
+
+
+
 
 
 
