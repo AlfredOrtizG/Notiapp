@@ -52,6 +52,7 @@ public class MisNotasFragment extends Fragment
         recyclerViewAdaptador = new RecyclerViewAdaptador(obtenerNotas(cursor));
         recyclerView.setAdapter(recyclerViewAdaptador);
         //ArrayList<String> reg = sqlite.getNotas(cursor);
+        sqlite.cerrar();
         return root;
     }
 
@@ -68,6 +69,10 @@ public class MisNotasFragment extends Fragment
                 nota += cursor.getString(2);
                 prioridad += cursor.getString(3);
                 notas.add(new Nota(id, titulo, nota, prioridad));
+                id="";
+                prioridad="";
+                titulo="";
+                nota="";
             } while (cursor.moveToNext());
         }
         return notas;

@@ -1,5 +1,6 @@
 package com.teambaa.notiapp.vistaCards;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -23,13 +25,13 @@ import java.util.List;
 public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder>
 {
 
-    public int posicion;
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
         private TextView prioridad, titulo, nota;
         private ImageView icono, icono_edit, icono_trash;
-
+        private CardView card;
 
         public ViewHolder(@NonNull View itemView)
         {
@@ -38,6 +40,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
             titulo = (TextView) itemView.findViewById(R.id.titulo);
             nota = (TextView) itemView.findViewById(R.id.nota);
             icono = itemView.findViewById(R.id.icono);
+            card = itemView.findViewById(R.id.card);
 
 
         }
@@ -60,10 +63,10 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
         return viewHolder;
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position)
     {
-        posicion = position;
         holder.titulo.setText(notas.get(position).getTitulo());
         holder.nota.setText(notas.get(position).getNota());
         switch (Integer.parseInt(notas.get(position).getPrioridad()))

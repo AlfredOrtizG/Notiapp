@@ -11,4 +11,6 @@
 
     <!--Strings de la aplicación-->
 
+    <string name="s_limpiar">Limpiar</string>
+    <string name="s_guardar">Guardar</string>
 </resources>

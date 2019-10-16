@@ -30,8 +30,8 @@
         tools:layout="@layout/acerca_de" />
     <fragment
         android:id="@+id/nav_eliminar"
-        android:name="com.teambaa.notiapp.ui.acerca_de.AcercaDeFragment"
-        android:label="@string/menu_acerca_de"
+        android:name="com.teambaa.notiapp.ui.eliminar.EliminarFragment"
+        android:label="@string/menu_eliminar"
         tools:layout="@layout/eliminar" />
 
 </navigation>

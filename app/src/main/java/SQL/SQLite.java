@@ -38,7 +38,7 @@ public class SQLite
     }
 
     //Funcion agregar registro
-    public boolean agregarNota(int id, String titulo, String nota, int prioridad)
+    public boolean agregarNota(int id, String titulo, String nota, String prioridad)
     {
         ContentValues cv = new ContentValues();
         cv.put("ID", id);

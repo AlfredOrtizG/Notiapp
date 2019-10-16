@@ -14,7 +14,7 @@ public class sql extends SQLiteOpenHelper
             "ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "TITULO TEXT NOT NULL," +
             "NOTA TEXT NOT NULL," +
-            "PRIORIDAD INTEGER NOT NULL);";
+            "PRIORIDAD TEXT NOT NULL);";
 
     //Constructor de la clase
     public sql(Context context)
