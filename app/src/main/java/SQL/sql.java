@@ -10,11 +10,11 @@ public class sql extends SQLiteOpenHelper
     private static final int VERSION = 1;
 
     //Comando para crear tabla
-    private final String tNotas = "CREATE TABLE ANIMALS (" +
+    private final String tNotas = "CREATE TABLE NOTAS (" +
             "ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
             "TITULO TEXT NOT NULL," +
             "NOTA TEXT NOT NULL," +
-            "PRIORIDAD INTEGER NOT NULL);";
+            "PRIORIDAD TEXT NOT NULL);";
 
     //Constructor de la clase
     public sql(Context context)
@@ -26,6 +26,7 @@ public class sql extends SQLiteOpenHelper
     public void onCreate(SQLiteDatabase db)
     {
         db.execSQL(tNotas);
+
     }
 
     @Override

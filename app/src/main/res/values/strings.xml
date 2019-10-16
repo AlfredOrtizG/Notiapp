@@ -7,7 +7,10 @@
     <string name="menu_crear_nota">Crear nota</string>
     <string name="menu_editar_nota">Editar nota</string>
     <string name="menu_acerca_de">Acerca de</string>
+    <string name="menu_eliminar">Eliminar nota</string>
 
     <!--Strings de la aplicación-->
 
+    <string name="s_limpiar">Limpiar</string>
+    <string name="s_guardar">Guardar</string>
 </resources>
