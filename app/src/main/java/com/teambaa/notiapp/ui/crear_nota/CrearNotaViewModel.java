@@ -11,8 +11,7 @@ public class CrearNotaViewModel extends ViewModel
 
     public CrearNotaViewModel()
     {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is crear_nota fragment");
+
     }
 
     public LiveData<String> getText()

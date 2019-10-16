@@ -39,15 +39,7 @@ public class CrearNotaFragment extends Fragment
         crearNotaViewModel =
                 ViewModelProviders.of(this).get(CrearNotaViewModel.class);
         View root = inflater.inflate(R.layout.crear_nota, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        crearNotaViewModel.getText().observe(this, new Observer<String>()
-        {
-            @Override
-            public void onChanged(@Nullable String s)
-            {
-                textView.setText(s);
-            }
-        });
+
 
         prioridad_nota = root.findViewById(R.id.sp_prioridad);
         id = root.findViewById(R.id.c_id_nota);
@@ -104,7 +96,7 @@ public class CrearNotaFragment extends Fragment
                         id.setText("");
                         titulo.setText("");
                         nota.setText("");
-                        prioridad_nota.setId(0);
+                        prioridad_nota.setSelection(0);
                     } else
                     {
                         Toast.makeText(getContext(),
@@ -128,7 +120,7 @@ public class CrearNotaFragment extends Fragment
                 id.setText("");
                 titulo.setText("");
                 nota.setText("");
-                prioridad_nota.setId(0);
+                prioridad_nota.setSelection(0);
             }
         });
         return root;

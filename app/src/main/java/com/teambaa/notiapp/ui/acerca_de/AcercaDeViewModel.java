@@ -12,7 +12,7 @@ public class AcercaDeViewModel extends ViewModel
     public AcercaDeViewModel()
     {
         mText = new MutableLiveData<>();
-        mText.setValue("This is acerca_de fragment");
+        mText.setValue("ACERCA DE NOTIAPP");
     }
 
     public LiveData<String> getText()

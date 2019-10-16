@@ -11,8 +11,6 @@ public class EliminarViewModel extends ViewModel
 
     public EliminarViewModel()
     {
-        mText = new MutableLiveData<>();
-        mText.setValue("ELIMINAR NOTA");
     }
 
     public LiveData<String> getText()

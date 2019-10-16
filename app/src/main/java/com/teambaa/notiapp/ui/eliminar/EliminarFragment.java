@@ -32,15 +32,7 @@ public class EliminarFragment extends Fragment
         eliminarViewModel =
                 ViewModelProviders.of(this).get(EliminarViewModel.class);
         View root = inflater.inflate(R.layout.eliminar, container, false);
-        final TextView textView = root.findViewById(R.id.text_eliminar);
-        eliminarViewModel.getText().observe(this, new Observer<String>()
-        {
-            @Override
-            public void onChanged(@Nullable String s)
-            {
-                textView.setText(s);
-            }
-        });
+
         id = root.findViewById(R.id.e_id_nota);
         btn_eliminar = root.findViewById(R.id.btn_eliminar);
 
