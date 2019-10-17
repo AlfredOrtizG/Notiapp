@@ -30,7 +30,7 @@ public class CrearNotaFragment extends Fragment
     EditText id, titulo, nota;
     Spinner prioridad_nota;
     Button btnGuardar, btnLimpiar;
-    int op;
+    int op=0;
     public SQLite sqlite;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -78,7 +78,7 @@ public class CrearNotaFragment extends Fragment
             public void onClick(View view)
             {
                 if (!titulo.getText().toString().equals("") &&
-                        !nota.getText().toString().equals(""))
+                        !nota.getText().toString().equals("") && op!=0)
                 {
                     //dentro de if
                     Toast.makeText(getContext(), String.valueOf(op) + " " +

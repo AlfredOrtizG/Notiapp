@@ -114,6 +114,7 @@ public class SQLite
 
     }
 
+    //Funcion para elminiar nota
     public int eliminarNota(Editable id)
     {
         return db.delete("NOTAS", "ID=" + id, null);

@@ -103,6 +103,7 @@ public class ModificarNotaFragment extends Fragment
                         nota.setText(g2.toString());
                         prioridad_nota.setSelection(g3);
 
+
                     }else
                         Toast.makeText(getContext(), "Error: No existe ese ID" +
                                 "", Toast.LENGTH_SHORT).show();
@@ -118,7 +119,7 @@ public class ModificarNotaFragment extends Fragment
             public void onClick(View v) {
 
 
-                if(!id.getText().toString().equals("")&&!titulo.getText().toString().equals("")&&!nota.getText().toString().equals("")){
+                if(!id.getText().toString().equals("")&&!titulo.getText().toString().equals("")&&!nota.getText().toString().equals("") && op!=0){
                     Toast.makeText(getContext(),titulo.getText().toString().toUpperCase()+" "+nota.getText().toString()+" "+prioridad_nota.getSelectedItem().toString()+" ", Toast.LENGTH_LONG).show();
                     sqlite.editarNota(Integer.parseInt(id.getText().toString()),titulo.getText().toString().toUpperCase(),nota.getText().toString(),op);
                     //recuperar id del ultimo registtro y pasa como parmetro

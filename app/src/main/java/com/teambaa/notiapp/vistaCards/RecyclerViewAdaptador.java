@@ -29,9 +29,9 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
 
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
-        private TextView prioridad, titulo, nota;
-        private ImageView icono, icono_edit, icono_trash;
-        private CardView card;
+        private TextView prioridad, titulo, nota,id_nota;
+        private ImageView icono;
+
 
         public ViewHolder(@NonNull View itemView)
         {
@@ -40,8 +40,8 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
             titulo = (TextView) itemView.findViewById(R.id.titulo);
             nota = (TextView) itemView.findViewById(R.id.nota);
             icono = itemView.findViewById(R.id.icono);
-            card = itemView.findViewById(R.id.card);
 
+            id_nota = itemView.findViewById(R.id.misnotas_id);
 
         }
 
@@ -84,6 +84,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
                 holder.icono.setImageResource(R.drawable.recordatorio);
                 break;
         }
+        holder.id_nota.setText("ID: "+notas.get(position).getId());
     }
 
     @Override

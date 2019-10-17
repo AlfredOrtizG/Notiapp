@@ -13,4 +13,6 @@
 
     <string name="s_limpiar">Limpiar</string>
     <string name="s_guardar">Guardar</string>
+
+    <string name="texto_acercade">Esta aplicación permite a sus usuarios crear y editar notas rapidas</string>
 </resources>
